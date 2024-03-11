@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="1">
+<button onclick="qa();">click</button>
+<p id="2"></p>
+<script>
+    function qa() {
+        let a = +document.getElementById("1").value;
+        if (a < 18.5){
+            document.getElementById("2").innerHTML= "BMI " +a +" ốm";
+        }
+        else if (a < 25 ){
+            document.getElementById("2").innerHTML= "BMI " +a +" bình thường";
+        }
+        else if (a < 30 ){
+            document.getElementById("2").innerHTML= "BMI " +a +" múp";
+        }
+        else {document.getElementById("2").innerHTML= "BMI " +a +" mập địt";}
+    }
+</script>
+</body>
+</html>
